@@ -1,0 +1,161 @@
+@font-face{
+    font-family: 'CooperLightBT';
+    src: url(CooperLightBT.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CooperLightBT';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>h1{
+    font-size: 27px;
+    font-weight: 600;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav #part2 a{
+    text-decoration: none;
+    color: #222;
+    margin: 20px;
+}
+#nav #part2 a:nth-last-child(1){
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-size: 17px;
+    position: relative;
+    font-weight: 100;
+    z-index: 99;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+
+}
+#main>h1{
+    font-size: 5.3vw;
+    width: 60%;
+    text-align: center;
+    font-weight: 100;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 99;
+}
+
+#main>h1::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/underline-green.svg");
+    bottom: -5%;
+    background-size: cover;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#main #part3{
+   position: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 70%;
+}
+#part3 #way{
+    margin-right: 20px;
+    font-size: 20px;
+}
+#part3 span:nth-last-child(1){
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+#part3 span:nth-last-child(1) #green2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease;
+}
+#part3 span:nth-last-child(1) i{
+    z-index: 99;
+    position: relative;
+    font-size: 15px;
+    font-weight: 100;
+}
+#part3 span:nth-last-child(1):hover #green2{
+    left: 0%;
+}
+#main img{
+    transition: margin 0.7s ease;
+}
+#main img:hover{
+    margin-top: -10px;
+}
+#main #img1{
+    width: 358px;
+    height: 516px;
+    top: 16%;
+    left: 8%;
+    position: absolute;
+}
+#main #img2{
+    width: 256px;
+    height: 216px;
+    top: 20%;
+    right: 23%;
+    position: absolute;
+}
+#main #img3{
+    height: 277px;
+    width: 277px;
+    top: 52%;
+    right: 8%;
+    position: absolute;
+}
+
