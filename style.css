@@ -10,17 +10,19 @@
 }
 html,body{
     width: 100%;
-    height: 100%;
+    height: 100%; 
 }
+
 #main{
     height: 100%;
     width: 100%;
     background: #fff;
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
+
 #nav{
     height: 100px;
     width: 100%;
@@ -72,17 +74,25 @@ html,body{
     left: 0;
 
 }
-#main>h1{
-    font-size: 5.3vw;
-    width: 60%;
+
+#page1{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+#page1>h1{
+    font-size: 5.5vw;
+    width: 70%;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
+    top: 34%;
+    left: 15%;
     text-transform: capitalize;
     position: relative;
     z-index: 99;
 }
 
-#main>h1::after{
+#page1>h1::after{
     content: '';
     position: absolute;
     width: 35%;
@@ -94,13 +104,14 @@ html,body{
     transform: translate(-50%, 0);
 }
 
-#main #part3{
+#page1 #part3{
    position: absolute;
    width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
    top: 70%;
+   left: -2%;
 }
 #part3 #way{
     margin-right: 20px;
@@ -131,27 +142,27 @@ html,body{
 #part3 span:nth-last-child(1):hover #green2{
     left: 0%;
 }
-#main img{
+#page1 img{
     transition: margin 0.7s ease;
 }
-#main img:hover{
+#page1 img:hover{
     margin-top: -10px;
 }
-#main #img1{
+#page1 #img1{
     width: 358px;
     height: 516px;
     top: 16%;
     left: 8%;
     position: absolute;
 }
-#main #img2{
+#page1 #img2{
     width: 256px;
     height: 216px;
     top: 20%;
     right: 23%;
     position: absolute;
 }
-#main #img3{
+#page1 #img3{
     height: 277px;
     width: 277px;
     top: 52%;
@@ -159,3 +170,80 @@ html,body{
     position: absolute;
 }
 
+#page2{
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+#page2 h5{
+    font-size: 19px;
+    font-family: gilroy;
+    font-weight: 500;
+    position: relative;
+}
+#page2 h5::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+#page2 h1{
+    font-size: 56px;
+    margin: 30px 0;
+    width: 70%;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+#page2 h1::after{
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 240px;
+    bottom: -12px;
+    background-image: url("https://thisisdigital.co.uk/dist/images/circle-green.svg");
+    left: 37%;
+
+}
+#aboutUs{
+    display: flex;
+    align-items: center;
+}
+#aboutUs>h4{
+    font-size: 28px;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#greendiv{
+    height: 40px;
+    width: 80px;
+    border: 1px solid #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    border-radius: 50px;
+    margin-left: 20px;
+
+}
+#greendiv img{
+    rotate: 90deg;
+    height: 40px;
+
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
